@@ -2,7 +2,7 @@ trigger:
 - master
 
 pool:
-  name: YourAgentPoolName  # Update this to the name of your agent pool where the "master" agent is hosted
+  name: master  # Update this to the name of your agent pool where the "master" agent is hosted
   vmImage: windows
 
 steps:
