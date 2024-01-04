@@ -3,7 +3,7 @@ trigger:
 
 pool:
   name: master  # Update this to the name of your agent pool where the "master" agent is hosted
-  demands: master
+
 
 
 steps:
