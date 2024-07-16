@@ -1,17 +1,1 @@
-trigger:
-- master
 
-pool:
-  name: master  # Update this to the name of your agent pool where the "master" agent is hosted
-
-
-
-steps:
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      # Write your commands here
-      
-      echo 'Hello world'
-  
