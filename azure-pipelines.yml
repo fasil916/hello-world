@@ -7,7 +7,9 @@ trigger:
 - master
 
 pool:
-  name: fasil-pool
+  name: 'fasil-pool'
+  demands:
+    - agent.name -equals agent-1
   
   
 
