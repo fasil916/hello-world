@@ -38,14 +38,6 @@ stages:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'fasil'
         publishLocation: 'Container'
-    - task: DockerInstaller@0
-      inputs:
-        dockerVersion: '17.09.0-ce'
-    - task: CmdLine@2
-      inputs:
-        script: |
-          sudo systemctl start docker
-          sudo usermod -aG docker $(whoami)
     - task: Docker@2
       inputs:
         containerRegistry: 'docker-connection'
