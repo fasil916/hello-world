@@ -38,3 +38,12 @@ stages:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'fasil'
         publishLocation: 'Container'
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'docker-connection'
+        repository: 'muhammadfasil/new-repo'
+        command: 'build'
+        Dockerfile: '**/Dockerfile'
+        tags: 'latest'
+        addPipelineData: false
+        addBaseImageData: false
