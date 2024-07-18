@@ -41,9 +41,6 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'docker-connection'
-        repository: 'muhammadfasil/new-repo'
-        command: 'build'
+        repository: 'muhammadfasil/mynew'
+        command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
-        tags: 'latest'
-        addPipelineData: false
-        addBaseImageData: false
