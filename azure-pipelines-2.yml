@@ -6,7 +6,7 @@ stages:
 - stage: build
   jobs:
   - job: build
-    pool: mypool
+    pool: fasil-pool
     steps:
     - task: Maven@4
       inputs:
